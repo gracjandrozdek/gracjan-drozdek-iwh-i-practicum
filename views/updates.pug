@@ -1,0 +1,21 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        a(href="/").return-home Return home
+        h1 Update cars table
+            form(action="/update-cobj", method="post") 
+                fieldset 
+                    label(for="name") Name
+                    input(type="text", name="name", required)#name
+                fieldset 
+                    label(for="name") Brand
+                    input(type="text", name="brand", required)#brand
+                fieldset 
+                    label(for="name") Model
+                    input(type="text", name="model", required)#model
+                fieldset
+                    input(type="submit", value="Create new entry")
